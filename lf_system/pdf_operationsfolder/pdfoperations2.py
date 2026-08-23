@@ -27,10 +27,10 @@ class PDFEditor2(BasicPDFOperations):
     full set of operations. Only :meth:`save`/:meth:`save_as` (inherited)
     and the methods below write PDF bytes to disk.
     """
-
+    
     def __init__(self, pdfs_path, writeback=False):
         super().__init__(pdfs_path, writeback)
-
+        
     def encrypt_pdf(self, password: str, output_path: str | Path | None = None) -> bool:
         """Encrypt the currently open PDF with a password.
 

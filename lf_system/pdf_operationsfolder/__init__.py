@@ -1,1 +1,1 @@
-"""PDF operations package."""
+"""LF System: PDFReader package."""

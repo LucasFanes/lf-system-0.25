@@ -46,3 +46,4 @@ def ensure_system_directories() -> None:
 def billing_database_path(data_folder: Path) -> Path:
     """Return the SQLite database path for a given data folder."""
     return Path(data_folder) / BILLING_DB_FILENAME
+

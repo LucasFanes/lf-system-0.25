@@ -1,8 +1,8 @@
 """Interactive text-based front end for the LF System: PDFReader.
 
 This module owns all user interaction (prompts, confirmations, printed
-output). It holds no PDF-editing logic of its own -- it only calls into
-:class:`PDFEditor` -- so a future TUI, GUI (own viewer), or API can be built
+output). It holds no PDF-editing logic of its own — it only calls into
+:class:`PDFEditor` — so a future TUI, GUI (own viewer), or API can be built
 the same way, reusing :class:`PDFEditor` unchanged.
 """
 
