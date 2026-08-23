@@ -1,0 +1,13 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "files.exclude": {
+    "**/.coverage": true,
+    "**/.pytest_cache*": true,
+    "**/.pytest_tmp*": true,
+    "**/.ruff_cache": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/*.egg-info": true,
+    "**/*.pyc": true
+  }
+}
