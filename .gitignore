@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache*/
+.pytest_tmp*/
+.ruff_cache/
+.ruff_cache*/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+lf_system.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated and local data
+.env
+.env.*
+credentials*.json
+client_secret*.json
+token*.json
+service_account*.json
+*.key
+*.pem
+*.p12
+*.pfx
+*.log
+*.bak
+*.tmp
+*.sqlite
+*.sqlite3
+*.db
+*.pdf
+!tests/fixtures/.gitkeep
+
+# Local IDE and OS files
+.vscode/*
+!.vscode/settings.json
+.idea/
+Thumbs.db
+.DS_Store
