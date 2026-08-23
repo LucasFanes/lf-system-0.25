@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lf-system"
+version = "0.26.0"
+description = "LF System desktop utilities and PDF tools."
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "customtkinter",
+    "ezsheets",
+    "openpyxl",
+    "pdfminer.six",
+    "PyMuPDF",
+    "pypdf",
+    "pymsgbox",
+    "pyperclip",
+    "Send2Trash",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.6.0",
+]
+
+[tool.pytest.ini_options]
+cache_dir = ".pytest_cache_run"
+addopts = [
+    "--basetemp=.pytest_tmp_run",
+    "--cov=lf_system",
+    "--cov-report=term-missing",
+    "--strict-config",
+    "--strict-markers",
+]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["lf_system"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+include = [
+    "Main.py",
+    "lf_system/**/*.py",
+    "tests/**/*.py",
+]
+exclude = [
+    "__pycache__",
+    ".venv",
+    ".pytest_cache*",
+    ".pytest_tmp*",
+    ".ruff_cache*",
+    "build",
+    "dist",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
